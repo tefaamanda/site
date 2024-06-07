@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Idade humana do animal</title>
+    <link rel="stylesheet" href="/static/css/styles.css">
+</head>
+<body>
+<!-- Início do Cabeçalho -->
+    <header>
+        <!-- imagem -->
+        <img class="logo" src="static/img/logo.png" alt="Logo da clínica Dog Dodói">
+        <nav>
+            <!-- botões -->
+            <div>
+                <a href="/" class="home">
+                HOME >
+            </a>
+            </div>
+            <div>
+                <a href="/agenda" class="contato">
+                    CONTATO >
+                </a>
+            </div>
+            <div>
+                <a href="/mais" class="mais">
+                    MAIS >
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- fim do cabeçalho -->
+    <main>
+        <center>
+            <section class="foto">
+                <br><br>
+                <h1></h1>
+                <br><br>
+            </section>
+
+            <br><br>
+            <center>
+                <section class="calc">
+                    <div class="butca">
+                        <h2 class="h2calc">Calculadora de idade em anos humanos</h2>
+                        <p class="p1">Se o seu cachorro ou seu gato fosse um humano, que idade teria? Descubra aqui!</p>
+                        <form action="/result" method="post">
+                            <img class="gato" src="static/img/gato.png" alt="Gato olhando para cima">
+
+                            <div class="form-control">
+                                <span class="s1">Qual a <span class="s2">espécie</span> do seu pet?</span>
+                                <input class="f" placeholder="Espécie do animalzinho " name="especie">
+                            </div>
+
+                            <div class="form-control">
+                                <span class="s1">Qual a <span class="s2">idade</span> real do seu pet?</span>
+                                <input class="f" placeholder="Idade do animalzinho" step="1" type="number" name="idade">
+                            </div> </br> </br>
+                            <button class="botcal" type="submit"> <span>CALCULAR IDADE</span> </button> <br /><br />
+                            <div>{{resultado}}</div>
+                            <img class="cachorro" src="static/img/cachorro.png" alt="cachorro olhando para cima">
+                    </section>
+                        </form>
+
+                    </div>
+        </center>
+    </main>
+
+</body>
+
+    <!-- início do rodapé -->
+<footer>
+<section class="sectionII">
+    <div>
+        <!-- endereço -->
+        <h2 class="info-rodape">Endereço</h2>
+    <p class="p2"> R. Nove de Julho, 1704 - Centro, São Carlos - SP, 13560-042</p>
+    <!-- telefone -->
+    <h2 class="info-rodape">Telefone</h2>
+    <p class="p2">(16) 99232-6072</p>
+    <!-- avaliações -->
+    <h2 class="info-rodape">Avaliações</h2>
+    <img class="img2" src="static/img/avaliacao.png" alt="avaliações de quatro estrelas e meia">
+    </div>
+       <div class="siga">
+        <h2 class="info-rodape">Siga-nos</h2>
+        <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s|c|320269324053|e|facebook|&placement=&creative=320269324053&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9100673%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQjwltKxBhDMARIsAG8KnqUr_a6fDs4EVBT7Kr6jePjJvocKkLFNB8TUQBr5DBzAdXYSshUPWXYaAoYDEALw_wcB">
+           <img class="face" src="static/img/facebook.png" alt="facebook">
+        </a>
+        <a href="https://twitter.com/login?lang=pt">
+          <img class="twitter" src="static/img/twitter.png" alt="twitter">
+        </a>
+        <a href="https://br.linkedin.com/">
+            <img class="linkedin" src="static/img/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/">
+           <img class="insta" src="static/img/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img class="you" src="static/img/youtube.png" alt="youtube">
+        </a>
+        <br />
+        <!-- logo -->
+        <img class="img3" src="static/img/logorodape.png" alt="Clínica de nutrição">
+    </div>
+        </section>
+            <!-- copyright -->
+        <section class="direitos">
+            <p class="p3">© 2024. Todos os direitos reservados.</p>
+        </section>
+</footer>
+  <!--fim do rodapé-->
+
+</html>

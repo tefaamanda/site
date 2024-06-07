@@ -1,0 +1,538 @@
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+
+
+/* cabeçalho */
+.logo {
+    width: 150px;
+}
+
+:root {
+    --cabeçalho: #ffffff;
+    --titulo: #02321a;
+    --subtitulo: #02321a;
+    --cinza: #fafafa;
+    --verde: #89cc86;
+    --verde1: #154734;
+    --branco: white;
+    --preto: black;
+    --botao1:  #006734;
+    --botao2: #8fbf13;
+    --rodape:  #02321a;
+}
+
+header {
+    background-color: var(--cabeçalho);
+    display: flex;
+    gap: 30px;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.home {
+    color: var(--titulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.Mais {
+    color: var(--titulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.contato {
+    color: var(--titulo);
+    font-weight: bold;
+    font-size: larger;
+}
+
+.calculadora {
+    color: var(--titulo);
+    font-weight: bold;
+    font-size: larger;
+}
+/* fim do cabeçalho */
+
+.t1 {
+    width:450px
+}
+
+p {
+    padding-left: 150px;
+    padding-right: 150px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+p span {
+    font-weight: bold;
+    color: #16567f;
+}
+
+.clinica2 {
+    padding-left: 50px;
+    border-radius: 20%;
+}
+
+.clinica {
+    padding-left: 80px;
+    padding-right: 30px;
+    border-radius: 20%;
+}
+
+.t2 {
+    width:450px
+}
+
+div .servicos {
+    background-color: var(--cabeçalho);
+}
+
+.vets {
+    border-radius: 20%;
+}
+
+/* cartão de serviços */
+
+.card-title {
+    padding-left: 0%;
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  
+  .small-desc {
+    padding-left: 0%;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .card {
+    display: block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .card:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .card:hover:before {
+    transform: scale(28);
+  }
+  
+  .card:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .card:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+  /* fim do cartão de serviços  */
+
+/* cartão 2 de serviços */
+.card-title {
+    padding-left: 0%;
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  
+  .small-desc {
+    padding-left: 0%;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .cardtop {
+    display: block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    margin-top: -70px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cardtop:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .cardtop:hover:before {
+    transform: scale(28);
+  }
+  
+  .cardtop:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .cardtop:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+  /* fim do cartão 2 de serviços  */
+
+  /* cartão 3 de serviços */
+.card-title {
+    padding-left: 0%;
+    color: #262626;
+    font-size: 1.5em;
+    line-height: normal;
+    font-weight: 700;
+    margin-bottom: 0.5em;
+  }
+  
+  .small-desc {
+    padding-left: 0%;
+    font-size: 1em;
+    font-weight: 400;
+    line-height: 1.5em;
+    color: #452c2c;
+  }
+  
+  .small-desc {
+    font-size: 1em;
+  }
+  
+  .go-corner {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    width: 2em;
+    height: 2em;
+    overflow: hidden;
+    top: 0;
+    right: 0;
+    background: linear-gradient(135deg, #6293c8, #384c6c);
+    border-radius: 0 4px 0 32px;
+  }
+  
+  .go-arrow {
+    margin-top: -4px;
+    margin-right: -4px;
+    color: white;
+    font-family: courier, sans;
+  }
+  
+  .cardtopo {
+    display: block;
+    position: relative;
+    max-width: 300px;
+    max-height: 320px;
+    background-color: #f2f8f9;
+    border-radius: 10px;
+    padding: 2em 1.2em;
+    margin: 12px;
+    margin-top: -85px;
+    text-decoration: none;
+    z-index: 0;
+    overflow: hidden;
+    background: linear-gradient(to bottom, #c3e6ec, #a7d1d9);
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  
+  .cardtopo:before {
+    content: '';
+    position: absolute;
+    z-index: -1;
+    top: -16px;
+    right: -16px;
+    background: linear-gradient(135deg, #364a60, #384c6c);
+    height: 32px;
+    width: 32px;
+    border-radius: 32px;
+    transform: scale(1);
+    transform-origin: 50% 50%;
+    transition: transform 0.35s ease-out;
+  }
+  
+  .cardtopo:hover:before {
+    transform: scale(28);
+  }
+  
+  .cardtopo:hover .small-desc {
+    transition: all 0.5s ease-out;
+    color: rgba(255, 255, 255, 0.8);
+  }
+  
+  .cardtopo:hover .card-title {
+    transition: all 0.5s ease-out;
+    color: #ffffff;
+  }
+
+  .cards {
+    display: flex;
+    justify-content: center;
+  }
+  /* fim do cartão 3 de serviços  */
+
+/* botão de agendamento */
+button {
+    background: transparent;
+    position: relative;
+    padding: 5px 15px;
+    display: flex;
+    align-items: center;
+    font-size: 17px;
+    font-weight: 600;
+    text-decoration: none;
+    cursor: pointer;
+    border: 1px solid #F5403D;
+    border-radius: 25px;
+    outline: none;
+    overflow: hidden;
+    color: #F5403D;
+    transition: color 0.3s 0.1s ease-out;
+    text-align: center;
+    margin-top: -100px;
+}
+  
+button span {
+    margin: 10px;
+}
+  
+button::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin: auto;
+    content: '';
+    border-radius: 50%;
+    display: block;
+    width: 20em;
+    height: 20em;
+    left: -5em;
+    text-align: center;
+    transition: box-shadow 0.5s ease-out;
+    z-index: -1;
+}
+  
+button:hover {
+    color: #fff;
+    border: 1px solid #F5403D;
+}
+  
+button:hover::before {
+    box-shadow: inset 0 0 0 10em #F5403D;
+}
+
+.agendamento {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+
+/* início do rodapé */
+.sectionII {
+    background-color: #16567f;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2 {
+    font-size: x-large;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: var(--branco);
+    padding: 30px;
+}
+
+.p2 {
+    color: var(--branco);
+    padding-left: 30px;
+    font-size: larger;
+}
+
+.img2 {
+    width: 200px;
+    padding-left: 20px;
+}
+
+.siga {
+    justify-self: flex-end;
+    padding-right: 30px;
+}
+
+.sig {
+    text-align: end;
+}
+
+.face {
+    width: 50px;
+}
+
+.twitter {
+    width: 65px;
+}
+
+.linkedin {
+    width: 70px;
+}
+
+.insta {
+    width: 70px;
+}
+
+.you {
+    width: 80px;
+}
+
+.img3 {
+    width: 200px;
+    padding-left: 160px;
+}
+
+.direitos {
+    background-color: #02223b;
+}
+
+.p3 {
+    text-align: center;
+    color: var(--branco);
+    font-size: larger;
+    padding: 30px;
+}
+
+.sectionn {
+    display: flex;
+    justify-content: center;
+}
+/* fim do rodapé */
+
+/* Responsividade */
+@media (max-width: 320px) {
+    .banner {
+        width: 800px
+    }
+    nav {
+        display: flex;
+        justify-content: center;
+    }
+    .t1 {
+        text-align:center
+    }
+    p {
+        padding-left: 50px;
+        padding-right: -300px;
+    }
+}
+
+

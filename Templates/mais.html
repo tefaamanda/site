@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Define o conjunto de caracteres como UTF-8 para suportar caracteres especiais -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Configura a escala inicial e a largura da visualização para dispositivos móveis -->
+    <link rel="stylesheet" href="/static/css/estilo.css">
+    <title>Página de Rotas</title> <!-- Define o título da página -->
+</head>
+<body class="body">
+  <!-- Início do Cabeçalho -->
+    <header>
+        <!-- imagem -->
+        <img class="logo" src="static/img/logo.png" alt="Logo da clínica Dog Dodói">
+        <nav>
+            <!-- botões -->
+            <div>
+                <a href="/" class="home">
+                HOME >
+            </a>
+            </div>
+            <div>
+                <a href="/agenda" class="contato">
+                    CONTATO >
+                </a>
+            </div>
+            <div>
+                <a href="/mais" class="mais">
+                    MAIS >
+                </a>
+            </div>
+        </nav>
+    </header>
+    <!-- fim do cabeçalho -->
+
+<!--  início das rotas -->
+    <h1>Lista de Contatos</h1>
+    <ul>
+        {% for contato in contatos %}
+        <li class="listac">{{ contato[1] }} - {{ contato[2] }} - {{ contato[3] }} - {{ contato[4] }} - {{ contato[5] }} - {{ contato[6] }} <!-- Exibe as informações do contato, incluindo o nome, número de telefone e email. Se for favorito, adiciona um marcador -->
+            <ul>
+                <li><a href="/editar_contato/{{ loop.index0 }}">Editar</a></li> <!-- Link para editar o contato -->
+                <li><a href="/apagar_contato/{{ loop.index0 }}">Apagar</a></li> <!-- Link para apagar o contato -->
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+     <section class="bot-agenda">
+        <a href="/adicionar_contato">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Adicionar Contato</span>
+            </button>
+        </a>
+    </section>
+
+    <h1>Consultas Agendadas</h1>
+    <ul>
+        {% for agenda in agendas %}
+        <li class="listac">{{ agenda[1] }} - {{ agenda[2] }} - {{ agenda[3] }} - {{ agenda[4] }}
+            <ul>
+                <li><a href="/apagar_agenda/{{ loop.index0 }}">Apagar</a></li>
+            </ul>
+        </li>
+        {% endfor %}
+    </ul>
+  <section class="bot-agenda">
+    <a href="/agenda">
+        <button class="learn-more">
+          <span class="circle" aria-hidden="true">
+          <span class="icon arrow"></span>
+          </span>
+          <span class="button-text">Agendar Consulta</span>
+        </button>
+    </a>
+  </section>
+  </br>
+    <h2 class="titulo">Calculadora de miligramas/peso corporal do medicamento</h2>
+    <section class="bot-agenda">
+        <a href="/calculadoramp">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Calcular agora</span>
+            </button>
+        </a>
+    </section>
+      </br>
+    <h2 class="titulo">Calculadora de mililitros</h2>
+      <section class="bot-agenda">
+        <a href="/calculadoram">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Calcular agora</span>
+            </button>
+        </a>
+          </br></br>
+    </section>
+    <h2 class="titulo">Calculadora de idade humana do animal</h2> <!-- Título principal da página -->
+          <section class="bot-agenda">
+        <a href="/calculadoraa">
+            <button class="learn-more">
+              <span class="circle" aria-hidden="true">
+              <span class="icon arrow"></span>
+              </span>
+              <span class="button-text">Calcular agora</span>
+            </button>
+        </a>
+    </section>
+  </br>
+<!--  fim das rotas -->
+
+    <!-- início do rodapé -->
+<footer>
+<section class="sectionII">
+    <div>
+        <!-- endereço -->
+        <h2 class="info-rodape">Endereço</h2>
+    <p class="p2"> R. Nove de Julho, 1704 - Centro, São Carlos - SP, 13560-042</p>
+    <!-- telefone -->
+    <h2 class="info-rodape">Telefone</h2>
+    <p class="p2">(16) 99232-6072</p>
+    <!-- avaliações -->
+    <h2 class="info-rodape">Avaliações</h2>
+    <img class="img2" src="static/img/avaliacao.png" alt="avaliações de quatro estrelas e meia">
+    </div>
+       <div class="siga">
+        <h2 class="info-rodape">Siga-nos</h2>
+        <a href="https://www.facebook.com/campaign/landing.php?&campaign_id=1661784632&extra_1=s|c|320269324053|e|facebook|&placement=&creative=320269324053&keyword=facebook&partner_id=googlesem&extra_2=campaignid%3D1661784632%26adgroupid%3D63686352403%26matchtype%3De%26network%3Dg%26source%3Dnotmobile%26search_or_content%3Ds%26device%3Dc%26devicemodel%3D%26adposition%3D%26target%3D%26targetid%3Dkwd-541132862%26loc_physical_ms%3D9100673%26loc_interest_ms%3D%26feeditemid%3D%26param1%3D%26param2%3D&gad_source=1&gclid=Cj0KCQjwltKxBhDMARIsAG8KnqUr_a6fDs4EVBT7Kr6jePjJvocKkLFNB8TUQBr5DBzAdXYSshUPWXYaAoYDEALw_wcB">
+           <img class="face" src="static/img/facebook.png" alt="facebook">
+        </a>
+        <a href="https://twitter.com/login?lang=pt">
+          <img class="twitter" src="static/img/twitter.png" alt="twitter">
+        </a>
+        <a href="https://br.linkedin.com/">
+            <img class="linkedin" src="static/img/linkedin.png" alt="linkedin">
+        </a>
+        <a href="https://www.instagram.com/">
+           <img class="insta" src="static/img/instagram.png" alt="instagram">
+        </a>
+        <a href="https://www.youtube.com/">
+            <img class="you" src="static/img/youtube.png" alt="youtube">
+        </a>
+        <br />
+        <!-- logo -->
+        <img class="img3" src="static/img/logorodape.png" alt="Clínica de nutrição">
+    </div>
+        </section>
+            <!-- copyright -->
+        <section class="direitos">
+            <p class="p3">© 2024. Todos os direitos reservados.</p>
+        </section>
+</footer>
+  <!--fim do rodapé-->
+</body>
+</html>
